@@ -10,10 +10,53 @@
   </head>
   <body>
     <main>
-      <form action="">
-        <h1>Contact Form</h1>
-        <!-- Add your code here -->
-      </form>
+      <div>
+        <form action="">
+          <h1>Contact Form</h1>
+          <!-- Add your code here -->
+          <div>
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" />
+          </div>
+          <br />
+          <div>
+            <label for="Email">Email:</label>
+            <input type="Email" id="Email" name="Email" class="email" />
+          </div>
+          <br />
+          <div>
+            <label for="Password">Password:</label>
+            <input
+              type="Password"
+              id="Password"
+              name="Password"
+              class="password"
+            />
+          </div>
+          <br />
+
+          <fieldset>
+            <legend>Would you like to sign up for the newsletter?</legend>
+            <div>
+              <input type="radio" id="option1" name="newsletter" value="yes" />
+              <label for="option1">Yes, sign me up</label>
+              <input type="radio" id="option2" name="newsletter" value="no" />
+              <label for="option2">No, thank you</label>
+            </div>
+          </fieldset>
+
+          <br />
+          <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <br />
+          <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
