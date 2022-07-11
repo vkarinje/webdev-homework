@@ -3,6 +3,16 @@ If you would prefer, you can delete them and use your own classes and style decl
 
 .container {
   width: 300px;
+  outline: grey;
+  outline-width: 3px;
+  border-radius: 10px;
+  border: 2px solid darkgrey;
+  text-align: center;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 23px;
+  color: red;
 }
 
 .img {
@@ -11,4 +21,24 @@ If you would prefer, you can delete them and use your own classes and style decl
 
 .btn {
   width: 100%;
+}
+.paragraphstyle {
+  width: 95%;
+  text-align: center;
+  margin: 10px;
+}
+.buttonstyle {
+  width: 95%;
+  margin: 10px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+.buttonstyle:hover {
+  background-color: orange;
+  color: black;
+}
+p {
+  text-align: left;
+  font-size: 15px;
 }

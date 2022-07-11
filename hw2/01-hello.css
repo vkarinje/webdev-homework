@@ -2,5 +2,24 @@
 If you would prefer, you can delete them and use your own classes and style defintions. */
 
 .container {
-  width: 50vw;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+p {
+  text-align: left;
+}
+img {
+  border-radius: 50%;
+}
+p::first-line {
+  font-weight: bold;
+  color: red;
+  font-style: italic;
+}
+h1 {
+  text-align: center;
+  color: blueviolet;
 }
