@@ -13,11 +13,10 @@ thead {
 
 .container {
   height: 200px;
-  border: 2px solid gray;
 }
 .container tr th,
 tr td {
-  border: 2px solid gray;
+  border: 1px solid gray;
 }
 thead tr th {
   padding: 10px;

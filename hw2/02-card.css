@@ -33,10 +33,12 @@ h1 {
   background-color: blue;
   color: white;
   padding: 10px;
+  border:1px solid black;
 }
 .buttonstyle:hover {
   background-color: orange;
   color: black;
+  border:1px solid black;
 }
 p {
   text-align: left;

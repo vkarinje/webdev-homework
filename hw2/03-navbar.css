@@ -31,9 +31,10 @@ body {
   color: var(--black);
 }
 .nav-list a:hover {
-  color: var(--black);
+  color:var(--black);
   background-color: var(--orange);
 }
+
 * {
   margin: 0%;
 }
