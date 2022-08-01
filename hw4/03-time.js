@@ -1,5 +1,22 @@
 const calculateTime = (date1, date2) => {
   // Given two dates, calculate and return the amount of time elapsed in years and months
+  const first = new Date(date1);
+  const second = new Date(date2);
+  const [firstyear, firstmonth] = [first.getFullYear(), first.getMonth()];
+  const [secondyear, secondmonth] = [second.getFullYear(), second.getMonth()];
+  const elapsed = new Date(first.getTime() - second.getTime());
+  const [year, month] = [elapsed.getFullYear(), elapsed.getMonth()];
+  if (!isNaN(year)) {
+    if (month == 0) {
+      return 'Time elapsed: ' + (year - 1970) + ' years';
+    } else if (year - 1970 == 0) {
+      return 'Time elapsed: ' + month + ' months';
+    } else {
+      return 'Time elapsed: ' + (year - 1970) + ' years, ' + month + ' months';
+    }
+  } else {
+    return 'Error: Invalid input provided';
+  }
 };
 
 // Date() formats:

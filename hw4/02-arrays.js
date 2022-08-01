@@ -1,25 +1,29 @@
 let result = [];
-
 const insertItem = (item) => {
   // insert item into result
-
+  result.push(item);
   return item;
 };
-
 const deleteItem = (item) => {
   // remove the first occurrence of item in result
-
+  indexvalue = result.indexOf(item);
+  result.splice(indexvalue, 1);
   return item;
 };
-
 const lookupItem = (index) => {
   // return the item from result at index, deleting the obtained item
-
-  return index;
+  item = result[index];
+  if (index >= 0) {
+    result.splice(index, 1);
+    return item;
+  } else {
+    return null;
+  }
 };
-
 const printItems = () => {
   // return a string of the concatenated item in result, separated by commas
+  string = result.join();
+  return string;
 };
 
 insertItem(1);
